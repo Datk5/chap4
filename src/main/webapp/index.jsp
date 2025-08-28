@@ -1,47 +1,67 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<%@ page contentType="text/html; charset=UTF-8" language="java" %>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Join Our Email List</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-        }
-        h1 {
-            color: green;  /* Tiêu đề xanh lá */
-        }
-        form {
-            margin-top: 20px;
-        }
-        label {
-            display: inline-block;
-            width: 100px;
-            margin-bottom: 10px;
-        }
-        input[type="text"], input[type="email"] {
-            padding: 5px;
-            width: 250px;
-        }
-        input[type="submit"] {
-            margin-top: 15px;
-            padding: 6px 12px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-<h1>Join Our Email List</h1>
+<!-- Logo góc trái -->
+<img class="logo" src="mur.webp" alt="Murach Books">
 
-<form action="emailList" method="post">
-    <label for="firstName">First Name:</label>
-    <input type="text" name="firstName" id="firstName"><br>
+<div class="page">
+    <h1>Survey</h1>
+    <p class="lead">
+        If you have a moment, we’d appreciate it if you would fill out this survey.
+    </p>
 
-    <label for="lastName">Last Name:</label>
-    <input type="text" name="lastName" id="lastName"><br>
+    <form action="thanks.jsp" method="post">
+        <h2>Your information:</h2>
+        <table class="info">
+            <tr>
+                <td class="lbl">First Name:</td>
+                <td><input type="text" name="firstName" class="txt"></td>
+            </tr>
+            <tr>
+                <td class="lbl">Last Name:</td>
+                <td><input type="text" name="lastName" class="txt"></td>
+            </tr>
+            <tr>
+                <td class="lbl">Email:</td>
+                <td><input type="email" name="email" class="txt"></td>
+            </tr>
+            <tr>
+                <td class="lbl">Date of Birth:</td>
+                <td><input type="date" name="dateOfBirth" class="txt"></td>
+            </tr>
+        </table>
 
-    <label for="email">Email:</label>
-    <input type="email" name="email" id="email"><br>
+        <h2>How did you hear about us?</h2>
+        <div class="choices">
+            <label><input type="radio" name="heardFrom" value="search" checked> Search engine</label>
+            <label><input type="radio" name="heardFrom" value="word"> Word of mouth</label>
+            <label><input type="radio" name="heardFrom" value="social"> Social Media</label>
+            <label><input type="radio" name="heardFrom" value="other"> Other</label>
+        </div>
 
-    <input type="submit" value="Submit">
-</form>
+        <h2>Would you like to receive announcements about new CDs and special offers?</h2>
+        <div class="choices">
+            <label><input type="checkbox" name="wantsUpdates"> YES, I’d like that.</label>
+            <label><input type="checkbox" name="wantsEmails"> YES, please send me email announcements.</label>
+        </div>
+
+        <div class="contact-row">
+            <span>Please contact me by: </span>
+            <select name="contactVia" class="select">
+                <option>Email or postal mail</option>
+                <option>Email only</option>
+                <option>Postal mail only</option>
+            </select>
+        </div>
+
+        <p><input type="submit" value="Submit" class="btn"></p>
+    </form>
+</div>
 </body>
 </html>

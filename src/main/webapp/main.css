@@ -1,11 +1,78 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+:root{
+    --brand: #0b6f66;       /* teal giống mẫu */
+    --text:  #222;
 }
-h1 {
-    color: green;
+
+/* Tổng thể */
+html,body{margin:0;padding:0}
+body{
+    font: 16px/1.45 Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background:#fff;
 }
-label {
-    display: inline-block;
-    width: 100px;
+
+/* Logo nhỏ góc trái */
+.logo{
+    width: 150px;           /* chỉnh kích cỡ logo ở đây (60–110px là đẹp như hình mẫu) */
+    height: auto;
+    display:block;
+    margin: 14px 0 0 20px; /* sát góc trái */
 }
+
+/* Vùng nội dung hẹp bên trái như hình ví dụ */
+.page{
+    max-width: 760px;      /* nhiều khoảng trắng bên phải */
+    margin: 0 0 60px 20px; /* căn trái giống mẫu */
+}
+
+/* Tiêu đề & tiểu mục */
+h1{
+    font-size: 28px;
+    color: var(--brand);
+    margin: 12px 0 10px 0;
+}
+h2{
+    font-size: 20px;
+    color: var(--brand);
+    margin: 22px 0 10px 0;
+    font-weight: 700;
+}
+
+.lead{ margin: 4px 0 20px 0; }
+
+/* Bảng thông tin để canh label/input thẳng hàng như hình */
+table.info{ border-collapse: collapse; }
+table.info .lbl{
+    width: 120px;          /* cột nhãn hẹp giống mẫu */
+    padding: 6px 12px 6px 0;
+    vertical-align: middle;
+}
+table.info td{ padding: 6px 0; }
+.txt{
+    width: 225px;          /* input hẹp như hình */
+    padding: 4px 6px;
+    box-sizing: border-box;
+}
+
+/* Nhóm lựa chọn */
+.choices label{
+    display:block;         /* mỗi dòng 1 lựa chọn như hình */
+    margin: 6px 0;
+}
+
+/* Hàng chọn liên lạc */
+.contact-row{
+    margin: 14px 0;
+}
+.select{
+    padding: 4px 6px;
+}
+
+/* Nút submit nhỏ */
+.btn{
+    padding: 5px 14px;
+    border: 1px solid #999;
+    background: #eee;
+    cursor: pointer;
+}
+.btn:hover{ background:#e4e4e4; }

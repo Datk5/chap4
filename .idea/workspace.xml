@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
+      <artifact name="chap2.:war" />
       <artifact name="chap2.:war exploded" />
     </artifacts-to-build>
   </component>
@@ -10,7 +11,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5bfa7287-86c1-4119-840a-8d6029bdfcc7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../chap2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap2/src/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap2/src/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap2/src/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap2/src/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap2/src/main/java/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap2/src/main/java/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap2/src/main/java/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap2/src/main/java/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap2/src/main/webapp/mur.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chap2/src/test/java/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chap2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chap2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap2/src/main/java/controller/EmailListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chap2/src/main/java/controller/EmailListServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap2/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chap2/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap2/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../chap2/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap2/src/main/webapp/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../chap2/src/main/webapp/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chap2/src/main/webapp/thanks.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../chap2/src/main/webapp/thanks.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,40 +52,48 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="31e2Gw3tG95VDBfA6aXky130dXW" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Maven.chap2 [clean].executor": "Run",
-    "Maven.chap2 [package].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Tomcat Server.Tomcat 9.0.108.executor": "Run",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/web/chap2/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.applicationServers",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Maven.chap2 [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.chap2 [package].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 9.0.108.executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat Server.Tomcat 9.executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat Server.chap4.executor&quot;: &quot;Run&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/web/chap2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/web/chap2/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.applicationServers&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunDashboard">
     <option name="excludedTypes">
       <set>
@@ -76,8 +101,101 @@
       </set>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Tomcat 9.0.108" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.108" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="$PROJECT_DIR$/../../Program Files/Java/jdk-24" nameIsGenerated="true">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.108">
+    <configuration name="Tomcat 9.0.108" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.108" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="chap2.:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/chap2__war_exploded" />
+          </settings>
+        </artifact>
+        <artifact name="chap2.:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/chap2__war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="22bcdd0c-c7ab-42ba-8a99-9c8cd6001f37" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="62995" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="chap2.:war exploded" />
+          <artifact name="chap2.:war" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="chap4" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.108" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="$PROJECT_DIR$/../../Program Files/Java/jdk-24">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="chap2.:war exploded">
@@ -85,6 +203,11 @@
             <option name="CONTEXT_PATH" value="/chap2" />
           </settings>
         </artifact>
+        <file path="$PROJECT_DIR$">
+          <settings>
+            <option name="CONTEXT_PATH" value="/chap2" />
+          </settings>
+        </file>
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="8d4f08f0-4587-419c-ad02-bed2737e0583" />
@@ -160,22 +283,14 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="chap2.:war exploded" />
+          <artifact name="chap2.:war" />
         </option>
       </method>
     </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings />
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.chap4" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.108" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -192,7 +307,31 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1755870125700</updated>
-      <workItem from="1755870126982" duration="7688000" />
+      <workItem from="1755870126982" duration="9594000" />
+      <workItem from="1756046542501" duration="18000" />
+      <workItem from="1756349340987" duration="43000" />
+      <workItem from="1756349451723" duration="778000" />
+      <workItem from="1756350300694" duration="13950000" />
+      <workItem from="1756393497641" duration="33000" />
+      <workItem from="1756393554958" duration="335000" />
+      <workItem from="1756394072819" duration="5000" />
+      <workItem from="1756394084776" duration="83000" />
+      <workItem from="1756394182839" duration="41000" />
+      <workItem from="1756394728454" duration="510000" />
+      <workItem from="1756395606327" duration="6000" />
+      <workItem from="1756395623733" duration="8000" />
+      <workItem from="1756395775962" duration="490000" />
+      <workItem from="1756396287724" duration="13000" />
+      <workItem from="1756396316243" duration="12000" />
+      <workItem from="1756396354103" duration="20000" />
+      <workItem from="1756396414599" duration="18000" />
+      <workItem from="1756396615594" duration="59000" />
+      <workItem from="1756397403929" duration="93000" />
+      <workItem from="1756399095143" duration="89000" />
+      <workItem from="1756399223057" duration="50000" />
+      <workItem from="1756400245653" duration="60000" />
+      <workItem from="1756400340405" duration="42000" />
+      <workItem from="1756400389882" duration="375000" />
     </task>
     <servers />
   </component>
@@ -203,7 +342,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../chap2/src/main/java/org/example/Main.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>

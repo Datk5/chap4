@@ -1,12 +1,8 @@
 package controller;
 
-import model.User;
-import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletException;
+import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.*;
 import java.io.IOException;
 
 @WebServlet("/emailList")
@@ -16,17 +12,28 @@ public class EmailListServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        // Lấy dữ liệu từ form
         String firstName = request.getParameter("firstName");
-        String lastName = request.getParameter("lastName");
-        String email = request.getParameter("email");
+        String lastName  = request.getParameter("lastName");
+        String email     = request.getParameter("email");
+        String dob       = request.getParameter("dob");
+        String heardFrom = request.getParameter("heardFrom");
+        String contactVia= request.getParameter("contactVia");
 
-        // Tạo đối tượng User
-        User user = new User(firstName, lastName, email);
+        String wantsUpdates = request.getParameter("wantsUpdates");
+        String wantsEmails  = request.getParameter("wantsEmails");
 
-        // Lưu vào request
-        request.setAttribute("user", user);
+        // Gán attribute để JSP hiển thị
+        request.setAttribute("firstName", firstName);
+        request.setAttribute("lastName", lastName);
+        request.setAttribute("email", email);
+        request.setAttribute("dob", dob);
+        request.setAttribute("heardFrom", heardFrom);
+        request.setAttribute("contactVia", contactVia);
+        request.setAttribute("wantsUpdates", (wantsUpdates != null ? "Yes" : "No"));
+        request.setAttribute("wantsEmails", (wantsEmails != null ? "Yes" : "No"));
 
-        // Forward sang trang thanks.jsp
+        // Forward tới trang kết quả
         RequestDispatcher dispatcher = request.getRequestDispatcher("thanks.jsp");
         dispatcher.forward(request, response);
     }
