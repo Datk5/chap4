@@ -1,26 +1,21 @@
-<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ page contentType="text/html; charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Thank You</title>
+    <title>Result Ex2</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/main.css">
 </head>
 <body>
 <img class="logo" src="mur.webp" alt="Murach Books">
 
 <div class="page">
-    <h1>Thanks for joining our email list</h1>
-    <p class="lead">Here is the information that you entered:</p>
+    <h1>TestServlet POST - Ex2</h1>
     <ul>
         <li><b>First Name:</b> ${firstName}</li>
         <li><b>Last Name:</b> ${lastName}</li>
         <li><b>Email:</b> ${email}</li>
-        <li><b>Date of Birth:</b> ${dob}</li>
-        <li><b>Heard From:</b> ${heardFrom}</li>
-        <li><b>Contact Via:</b> ${contactVia}</li>
-        <li><b>Wants Updates:</b> ${wantsUpdates}</li>
-        <li><b>Wants Emails:</b> ${wantsEmails}</li>
+        <li><b>Preferred Contact:</b> ${contactVia}</li>
     </ul>
     <p><a href="index.jsp">Back to Home</a></p>
 </div>

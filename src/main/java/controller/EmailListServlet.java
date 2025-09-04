@@ -23,18 +23,32 @@ public class EmailListServlet extends HttpServlet {
         String wantsUpdates = request.getParameter("wantsUpdates");
         String wantsEmails  = request.getParameter("wantsEmails");
 
-        // Gán attribute để JSP hiển thị
-        request.setAttribute("firstName", firstName);
-        request.setAttribute("lastName", lastName);
-        request.setAttribute("email", email);
-        request.setAttribute("dob", dob);
-        request.setAttribute("heardFrom", heardFrom);
-        request.setAttribute("contactVia", contactVia);
-        request.setAttribute("wantsUpdates", (wantsUpdates != null ? "Yes" : "No"));
-        request.setAttribute("wantsEmails", (wantsEmails != null ? "Yes" : "No"));
+        // Validate dữ liệu (3 field bắt buộc)
+        String message = "";
+        if (firstName == null || firstName.isEmpty()
+                || lastName == null || lastName.isEmpty()
+                || email == null || email.isEmpty()) {
+            message = "All three fields are required.";
+        }
 
-        // Forward tới trang kết quả
-        RequestDispatcher dispatcher = request.getRequestDispatcher("thanks.jsp");
+        String url;
+        if (!message.isEmpty()) {
+            url = "survey.jsp";  // trả về lại form
+            request.setAttribute("message", message);
+        } else {
+            url = "thanks.jsp";  // sang trang cảm ơn
+            request.setAttribute("firstName", firstName);
+            request.setAttribute("lastName", lastName);
+            request.setAttribute("email", email);
+            request.setAttribute("dob", dob);
+            request.setAttribute("heardFrom", heardFrom);
+            request.setAttribute("contactVia", contactVia);
+            request.setAttribute("wantsUpdates", (wantsUpdates != null ? "Yes" : "No"));
+            request.setAttribute("wantsEmails", (wantsEmails != null ? "Yes" : "No"));
+        }
+
+        // Forward đến trang tương ứng
+        RequestDispatcher dispatcher = request.getRequestDispatcher(url);
         dispatcher.forward(request, response);
     }
 }
