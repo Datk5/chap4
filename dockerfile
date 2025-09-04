@@ -1,13 +1,28 @@
-# Dùng Tomcat 9 + JDK17 (hợp với code của bạn)
+# =========================
+# Build stage
+# =========================
+FROM maven:3.9.6-eclipse-temurin-17 AS build
+WORKDIR /app
+
+# Copy source code vào container
+COPY . .
+
+# Build file WAR, bỏ qua test cho nhanh
+RUN mvn clean package -DskipTests
+
+
+# =========================
+# Run stage
+# =========================
 FROM tomcat:9.0-jdk17
 
-# Xóa các app mặc định trong Tomcat (ROOT, docs, examples)
+# Xóa ứng dụng mặc định của Tomcat
 RUN rm -rf /usr/local/tomcat/webapps/*
 
-# Copy WAR của bạn vào Tomcat (đặt tên ROOT.war để chạy ở "/")
-COPY target/chap2.war /usr/local/tomcat/webapps/ROOT.war
+# Copy file WAR từ build stage sang Tomcat, đổi tên thành ROOT.war
+COPY --from=build /app/target/chap2-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
 
-# Mặc định Tomcat sẽ chạy trên port 8080
+# Tomcat chạy trên port 8080
 EXPOSE 8080
 
 # Lệnh start Tomcat
